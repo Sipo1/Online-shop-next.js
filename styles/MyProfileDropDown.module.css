@@ -1,0 +1,50 @@
+
+
+
+
+.logOut {
+    border: none !important;
+    color: black !important;
+    background-color: #F5F5F5 !important;
+    font-family: Inter !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 17px !important;
+    letter-spacing: 0em !important;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.text11 {
+    width: 100% !important;
+    text-align: center !important;
+}
+
+
+@media only screen and (max-width:980px) {
+
+    .logOutBlock {
+        background-color: #F5F5F5 !important;
+        width: 500px;
+        left: -198px!important;
+        transform: translate3d(0px, 36px, 0px)!important;
+    }
+    .menu {
+        display: block;
+    }
+    
+}
+@media only screen and (max-width:720px) {
+
+    .logOutBlock {
+        background-color: #F5F5F5 !important;
+        position: absolute!important;
+        left: -198px!important;
+        transform: translate3d(0px, 36px, 0px)!important;
+    }
+    
+}

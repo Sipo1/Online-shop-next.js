@@ -1,0 +1,248 @@
+.wrapper {
+  width: 80%;
+  height: 800px;
+  margin: 20px;
+}
+
+.title {
+  height: 13%;
+}
+
+.text1 {
+  font-family: Readex Pro;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+
+.text2 {
+  font-family: Readex Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+
+}
+
+.categories {
+  height: 85%;
+  display: flex;
+}
+
+.leftSide {
+  width: 50%;
+  height: 97.7%;
+}
+
+.rightSide {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.leftSideLaptop {
+  width: 100%;
+  height: 60%;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 50px;
+  cursor: pointer;
+  box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -webkit-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -moz-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+}
+
+.leftSideWatch {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -webkit-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -moz-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+}
+
+.img {
+  padding-left: 40px;
+  height: 75%;
+}
+
+.laptopName {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin: 0;
+  padding-right: 40px;
+}
+
+.laptopDesc {
+  font-family: Readex Pro;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  margin: 0;
+  padding-right: 40px;
+  height: 25%;
+  text-align: end;
+}
+
+.watchText {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 42px;
+}
+
+.watchName {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.watchDesc {
+  font-family: Readex Pro;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.watchImg {
+  width: 60%;
+}
+
+.rigthPhoneSide {
+  width: 50%;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -webkit-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -moz-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  margin-left: 20px;
+  background-color: white;
+}
+
+.rigthPhoneText1 {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+
+.rigthPhoneText2 {
+  font-family: Readex Pro;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+
+.ipadSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-left: 20px;
+  height: 92%;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -webkit-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -moz-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+}
+
+.ipadText1 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.ipadText2 {
+  font-family: Readex Pro;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+
+@media only screen and (max-width:1140px) {
+  .wrapper {
+    width: 80%;
+    height: 800px;
+    margin: 20px;
+  }
+
+  .text1 {
+    font-size: 35px;
+  }
+
+  .laptopDesc {
+    font-family: Readex Pro;
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .laptopName{
+    margin-right: -30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width:980px) {
+  .laptopDesc{
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width:720px) {
+  .laptopDesc{
+    font-size: 16px;
+  }
+  .text1{
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+  .text2{
+    font-size: 12px;
+  }
+  .wrapper{
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width:540px) {
+.wrapper{
+  width: 1000px;
+}
+}

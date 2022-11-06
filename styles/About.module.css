@@ -1,0 +1,263 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.topBlock {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.topBlockLeftSide {
+    width: 50%;
+    height: 100%;
+    background-color: #EC6609;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutText{
+    font-size: 52px;
+     color: white;
+}
+.list ul {
+    font-size: 28px;
+    color: white;
+}
+.topBlockLeftSide li {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.midBlocktext {
+    color: #8D8E92;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.topBlockRightSide {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.topBlockRightSide:first-child {
+    width: 100%;
+}
+
+.midBlock {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.midBlockLeftSide {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.firstImage{
+    width: 65%;
+    height: auto;
+    position: absolute;
+    right: 25px;
+    top: 62px;
+    border-radius: 10px;
+}
+.secondImage{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top:200px;
+    left: 100px;
+    border: 20px solid white;
+    border-radius: 10px;
+}
+
+.midBlockRightSide {
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.midBlockRightSide li {
+    color: #8D8E92;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.midBlockHeader{
+    font-size : 38px
+}
+
+.about {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8D8E92;
+    border: 1px solid #C7DCFB;
+    width: 120px;
+    border-radius: 200px;
+    padding: 4px;
+    text-align: center;
+}
+.parent{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+.bottomBlock {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+
+.bottomBlockLeftSide {
+    width: 50%;
+    height: 100%;
+    background-color: #EC6609;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooseText{
+    color: white;
+     font-size: 38px 
+}
+.bottomButton{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    border: 1px solid #C7DCFB;
+    width: 120px;
+    border-radius: 200px;
+    padding: 4px;
+    text-align: center;
+}
+
+.bottomBlockRightSide {
+    width: 50%;
+    height: 100%;
+}
+.experienceText{
+    color: white;
+     font-size: 20px
+}
+.Experience{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+}
+ .Experience li {
+        font-size: 14px;
+        text-align: start;
+        width: 100px;
+    }
+
+
+@media only screen and (max-width:1140px) {
+    .aboutText{
+        font-size: 48px;
+        margin-left: 20px;
+    }
+    .topBlockLeftSide li  {
+        margin-left: 40px;
+    }
+    .chooseText{
+        font-size: 32px;
+        margin-left: 20px;
+    }
+    .bottomButton{
+        margin-left: 20px;
+    }
+    .experienceText{
+        margin-left: 20px;
+        font-size: 18px;
+    }
+  }
+
+
+
+
+  @media only screen and (max-width:980px) {
+    .aboutText{
+        font-size: 45px;
+        margin-left: 20px;
+    }
+    .topBlockLeftSide li  {
+        margin-left: 40px;
+    }
+    .midBlockHeader{
+        font-size: 25px;
+    }
+    .chooseText{
+        font-size: 28px;
+    }
+    .experienceText{
+        font-size: 14px;
+    }
+    
+  }
+
+
+
+
+
+  @media only screen and (max-width:720px) {
+    .wrapper {
+        width: 1200px;
+    }
+    .aboutText{
+        font-size: 28px;
+        margin-left: 20px;
+    }
+    .list ul {
+        font-size: 22px;
+    }
+    .list li {
+        font-size: 16px;
+    }
+    .midBlockHeader{
+        font-size: 20px;
+    }
+    .midBlocktext{
+        font-size: 14px;
+    }
+     .chooseText{
+        font-size: 22px;
+    }
+    .experienceText{
+        font-size: 13px;
+    }
+    .Experience li {
+        font-size: 14px;
+        text-align: start;
+        width: 100px;
+    }
+    .parent{
+        display: flex;
+        margin: 0px 20px 0px 20px;
+    }
+  }
+  

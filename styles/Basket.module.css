@@ -1,0 +1,54 @@
+.wrapper {
+  min-height: 100vh;
+  height: 100vh;
+
+}
+
+.basketText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh
+}
+
+.card {
+  width: 20%;
+  height: 400px;
+  overflow: hidden;
+  margin-left: 15px;
+  box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -webkit-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -moz-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+}
+
+.cardWrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardImg {
+  text-align: center;
+}
+
+.basketText {
+  font-family: Readex Pro;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0em;
+}
+
+.removeBtn {
+  color: black;
+  padding: 5px;
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+
+.removeBtn :hover {
+  background-color: red;
+
+}

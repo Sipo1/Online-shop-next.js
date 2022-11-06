@@ -1,0 +1,19 @@
+.global{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  background-color:  #F5F5F5;;
+}
+
+@media only screen and (max-width:540px) {
+  .global{
+    width: 1200px;
+  }
+  }
+  @media only screen and (max-width:720px) {
+    .global{
+      width: 1200px;
+    }
+    }

@@ -1,0 +1,63 @@
+.text1 {
+  font-family: Readex Pro;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 130px;
+  margin-left: 50px;
+}
+
+.text2 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.btn {
+  border: 1px solid #000000;
+  border-radius: 200px;
+  height: 40px;
+  width: 100px;
+  margin-left: 50px;
+  background: none;
+}
+
+@media only screen and (max-width:1140px) {
+  .text1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width:980px) {
+  .text1 {
+    margin-top: 80px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width:720px) {
+  .text1 {
+    margin-top: 70px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width:540px) {
+  .text1 {
+    margin-top: 60px;
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .text2 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,66 @@
+.wrapper {
+  background-color: #dce5e2;
+  width: 65%;
+  height: 450px;
+  margin: 15px;
+}
+.title {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.text1 {
+  width: 393px;
+  height: 53px;
+  left: calc(50% - 393px / 2 - 0.48px);
+  top: 19.45px;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+.text2{
+width: 549px;
+height: 20px;
+left: calc(50% - 549px/2 - 0.48px);
+top: 81.45px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #000000;
+}
+.img {
+  height: 40%;
+  text-align: center;
+}
+
+.input {
+  height: 30%;
+  text-align: center;
+}
+.input input {
+box-sizing: border-box;
+height: 50px;
+width: 285px;
+background: #DCE5E2;
+border: 1px solid #000000;
+border-radius: 54px 0px 0px 54px;
+padding-left: 20px;
+margin-top: 40px;
+}
+
+.input button {
+height: 50px;
+background: #000000;
+border-radius: 0px 200px 200px 0px;
+color: white;
+width: 115px;
+}
