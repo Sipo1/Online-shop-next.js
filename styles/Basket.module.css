@@ -1,14 +1,13 @@
 .wrapper {
   min-height: 100vh;
-  height: 100vh;
-
+  padding: 25px;
 }
 
 .basketText {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh
+  height: 100vh;
 }
 
 .card {
@@ -26,6 +25,8 @@
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .cardImg {
@@ -50,5 +51,27 @@
 
 .removeBtn :hover {
   background-color: red;
+}
+.basketImg {
+  width: 100%;
+  height: 160px;
+}
+.basketButtonsDelete {
+  border: none;
+  background-color: white;
+  width: 45%;
+}
+.basketButtonsDelete:hover {
+  background-color: red;
+  transition: 0.8s;
+}
 
+.basketButtonsBuy {
+  border: none;
+  background-color: white;
+  width: 45%;
+}
+.basketButtonsBuy:hover {
+  background-color: green;
+  transition: 0.8s;
 }

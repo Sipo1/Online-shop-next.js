@@ -19,7 +19,7 @@ function AllProductDropDown({ direction, ...args }) {
     const productList = ["Ipads", "Phones", "Watches", "Laptops"]
 
     return (
-        <div className="d-flex p-5" isOpen={dropdownOpen} toggle={toggle}>
+        <div className="d-flex p-5"  >
             <Dropdown isOpen={dropdownOpen} toggle={toggle} direction={direction}>
                 <DropdownToggle className={styles.logOut} caret>All product  </DropdownToggle>
                 <DropdownMenu className={styles.logOutBlock} {...args}>

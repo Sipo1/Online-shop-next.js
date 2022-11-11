@@ -11,7 +11,7 @@ const Footer = () => {
       <div className={styles.info}>
         <div className={styles.infoLeftSide}>
           <div>
-            <Image unoptimized src="/country.png" width={170} height={20} />
+            <Image unoptimized='true' src="/country.png" width={170} height={20} />
             <p className={styles.footerText}>
               Sign up for texts to be notified about <br /> our best offers on the
               perfect gifts.
@@ -22,8 +22,8 @@ const Footer = () => {
           {footerData.map((item) => (
             <ul key={item.id}>
               <li className={styles.title}>{item.title}</li>
-              {item.childrens.map((i) => (
-                <Link href={i.path}>
+              {item.childrens.map((i,index) => (
+                <Link href={i.path} key= {index} >
                 <li key={i.id}>{i.name}</li>
                 </Link>
               ))
@@ -37,13 +37,13 @@ const Footer = () => {
           <span>
             <strong>Made BY :</strong> Azwedo {""}
           </span>
-          <Image unoptimized src="/arrow.png" width={12} height={12} />
+          <Image unoptimized='true' src="/arrow.png" width={12} height={12} />
         </div>
         <div>
           <span>
             <strong>Powered by :</strong> Webflow {""}
           </span>
-          <Image unoptimized src="/arrow.png" width={12} height={12} />
+          <Image unoptimized='true' src="/arrow.png" width={12} height={12} />
         </div>
       </div>
     </div>

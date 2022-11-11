@@ -12,7 +12,7 @@ const IdeasPart = () => {
       </div>
       <div className={styles.imgAndInfo}>
         <div className={styles.ideaImg}>
-          <img unoptimized src="/ideasImg.png" />
+          <img unoptimized='true' src="/ideasImg.png" />
         </div>
         <div className={styles.ideaText}>
           <p>We Make It Easy To Find The Great Design Talent, Easier...</p>
@@ -23,7 +23,7 @@ const IdeasPart = () => {
       </div>
       <div className={styles.moreInfo}>
         <span>See All</span>
-        <Image unoptimized src="/arrow.png" width={15} height={15} />
+        <Image unoptimized='true' src="/arrow.png" width={15} height={15} />
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ const TheBestItems = () => {
                 <button className={styles.cardBtn} onClick={() => navigate.push(`${item.path}`)}>Explore</button>
               </div>
               <div className={styles.cardImage}>
-                <Image unoptimized src={item.img} width={200} height={200} />
+                <Image unoptimized='true' src={item.img} width={200} height={200} />
               </div>
             </div>
           );
