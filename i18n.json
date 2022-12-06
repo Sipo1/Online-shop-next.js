@@ -1,0 +1,10 @@
+{
+  "locales": ["ru" ,"am", "en" ],
+  "defaultLocale":"en",
+  "localeDetection": false,
+  "pages":{
+    "*": ["common"],
+    "/aboutUs":["about"]
+  }
+ 
+}

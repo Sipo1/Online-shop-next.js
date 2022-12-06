@@ -3,9 +3,11 @@ import { useState,useContext } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
 import AppContext from "../src/components/context/context";
+import useTranslation from 'next-translate/useTranslation';
 
 const Login = () => {
   const navigate = useRouter();
+  const { t } = useTranslation()
   const {setIsAuth} = useContext(AppContext);
   const [errorMessage,setErrorMessage] = useState("")
 
@@ -66,28 +68,28 @@ const Login = () => {
       <p className={styles.errorMessage}>{errorMessage}</p>
 
         <div>
-          <label htmlFor="usernameId">Username</label>
+          <label htmlFor="usernameId">{t("common:username")}</label>
           <input
             id="usernameId"
             value={loginForm.username.value}
             name="username"
-            placeholder=" username"
+            placeholder={t("common:username")}
             type="username"
             onChange={handleChange}
           />
         </div>
         <div>
-          <label htmlFor="passwordId">Password</label>
+          <label htmlFor="passwordId">{t("common:password")}</label>
           <input
             id="passwordId"
             name="password"
             value={loginForm.password.value}
-            placeholder=" Password"
+            placeholder={t("common:password")}
             type="password"
             onChange={handleChange}
           />
         </div>
-        <button className={styles.formButton}>Login</button>
+        <button className={styles.formButton}>{t("common:login")}</button>
       </form>
     </div>
   );

@@ -47,7 +47,7 @@ const MostSelledItem = ({ id }) => {
                     <p>{mostSelledItemsData.name}</p>
                     <p>{mostSelledItemsData.description}</p>
                     <p>{mostSelledItemsData.price}</p>
-                    <div>
+                    <div className={styles.btnBlock}>
                         {foo() ?
                             <Link href={"/basket"}>
                                 <a>

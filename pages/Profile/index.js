@@ -2,8 +2,10 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import ChangePasswordModal from '../../src/components/modal/changePassword'
 import styles from "../../styles/Profile.module.css"
+import useTranslation from 'next-translate/useTranslation';
 
 const Profile = () => {
+    const { t } = useTranslation()
     const [user, setUser] = useState('')
     const [loading, setLoading] = useState(true)
     const [img, setImg] = useState("")
@@ -57,12 +59,12 @@ const Profile = () => {
             <div className={styles.innerWrapper}>
                 <div className={styles.image}>
                     {loading ?
-                        <div className={styles.loader}>Loading</div>
+                        <div className={styles.loader}>{t("common:loading")}</div>
                         :
                         <img src={img ? img : user.img ? user.img : '/user.png'} />}
                     <div className={styles.btns}>
                         <label className={styles.label}>
-                            Change Photo
+                            {t("common:changePhoto")}
                             <input placeholder='Change Photo'
                                 type="file"
                                 style={{ display: "none" }}
@@ -71,7 +73,7 @@ const Profile = () => {
                         </label>
                         <button onClick={changePhoto}
                             disabled={!img.length ? true : false}
-                        >Save Photo</button>
+                        >{t("common:savePhoto")}</button>
                     </div>
                 </div>
                 <div className={styles.info}>

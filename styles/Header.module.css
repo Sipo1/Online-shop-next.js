@@ -1,37 +1,85 @@
-.header{
-    width: 100%;
+.header {
     height: 80px;
     display: flex;
     justify-content: space-around;
     background: #F5F5F5;
-    position:relative;
-    
+    position: relative;
+
 }
-.img{
+
+.img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.tools{
+
+.tools {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 120px;
 }
+
+.layout {
+    width: 100%;
+}
+
+.countryImg {
+    width: 170px;
+    height: 20px;
+}
+
+.searchImg {
+    width: 35px;
+    height: 30px;
+}
+.basketImg{
+    width: 30px;
+    height: 30px;
+}
+@media only screen and (max-width:1140px) {
+    .layout {
+        width: 1260px;
+    }
+
+
+}
+
 @media only screen and (max-width:720px) {
-    .header{
-        width: 1200px;
+    .layout {
+        width: 1260px;
     }
-    
-  
+
+
 }
+
 @media only screen and (max-width:540px) {
-    .header{
-        width: 1200px;
+
+    .layout {
+        width: 1260px;
     }
-    
-  
+
 }
 
+@media only screen and (max-width:400px) {
+    .header {
+        height: 200px;
+    }
 
+    .countryImg {
+        width: 300px;
+        height: 70px;
+    }
+    .searchImg{
+        width: 80px;
+        height: 60px;
+    }
+    .tools{
+        width: 300px;
+    }
+    .basketImg{
+        width: 80px;
+        height: 60px;
+    }
 
+}

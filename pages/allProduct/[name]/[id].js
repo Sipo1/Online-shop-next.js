@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { Button, Card, CardBody, CardFooter, CardTitle } from "reactstrap";
 import { CardText } from "reactstrap";
 import styles from "../../../styles/eachElement.module.css";
+import useTranslation from 'next-translate/useTranslation';
+
 
 export async function getServerSideProps(context) {
   const { id, name } = context.params;
@@ -15,7 +17,7 @@ export async function getServerSideProps(context) {
 
 
 const Id = ({ name, id }) => {
-
+  const { t } = useTranslation()
   const [element, setElement] = useState([]);
   const [loading, setLoading] = useState(true);
   const [toggleBasket, setToggleBasket] = useState(false);
@@ -47,55 +49,49 @@ const Id = ({ name, id }) => {
   return (
     <div
       style={{
-        height: "100vh",
+        height: "auto",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        minHeight: "100vh"
       }}
     >
       {loading ? (
         <div className={styles.loader}>
-          <span>Loading...</span>
+          <span>{t("common:loading")}</span>
         </div>
       ) : (
         <Card
-          style={{
-            width: "30%",
-            height: "auto",
-            display: "flex",
-            flexDirection: "column",
-            padding: "10px",
-            alignItems: " center",
-            background: "aliceblue",
-            border:"none"
-          }}
+          className={styles.cards}
+
         >
           <div className={styles.imageBlock}>
-            <img src={card.img}  />
+            <img src={card.img} />
           </div>
-          <CardBody>
-            <CardTitle tag="h5" style={{ color: "black" ,fontFamily: "Inter"}}>
+
+          <CardBody className={styles.bodys}>
+            <CardTitle tag="h5" className={styles.cardTitles}>
               {card.name}
             </CardTitle>
 
-            <CardText style={{fontFamily: "Inter"}}>{card.description}</CardText>
-            <CardText style={{fontFamily: "Inter"}}>{card.price}</CardText>
+            <CardText className={styles.cardTexts} >{card.description}</CardText>
+            <CardText className={styles.cardTexts}>{card.price}</CardText>
           </CardBody>
-          <CardFooter style={{width:"100%",display:"flex",justifyContent:"space-around"}}>
+          <CardFooter className={styles.cardFooters}>
             {foo() ? (
               <Link href={"/basket"}>
                 <a>
-                  <Button color="info" style={{width:"150px"}}> Go To Basket </Button>
+                  <Button color="info" className={styles.btns}>{t("common:goToBasket ")}</Button>
                 </a>
               </Link>
             ) : (
               <a>
-                <Button color="warning" onClick={() => addToBasket()} style={{width:"150px"}}>
-                  Add to Basket
+                <Button color="warning" onClick={() => addToBasket()} className={styles.btns}>
+                {t("common:addToBasket")}
                 </Button>
               </a>
             )}
-            <Button color="success" style={{width:"150px"}} onClick={()=>navigate.push("/contactUs")} >Contact Us</Button>
+            <Button color="success" className={styles.btns} onClick={() => navigate.push("/contactUs")} >{t("common:contact")}</Button>
           </CardFooter>
         </Card>
       )}{" "}

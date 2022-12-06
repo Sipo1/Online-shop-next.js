@@ -12,7 +12,8 @@
   align-items: center;
 }
 .text1 {
-  width: 393px;
+  width: auto;
+  
   height: 53px;
   left: calc(50% - 393px / 2 - 0.48px);
   top: 19.45px;
@@ -63,4 +64,53 @@ background: #000000;
 border-radius: 0px 200px 200px 0px;
 color: white;
 width: 115px;
+}
+
+.sendEmailImg{
+  width: 233px;
+  height: 200px
+}
+
+@media only screen and (max-width:400px) {
+  .wrapper{
+    height: 1300px;
+    margin-bottom: 100px;
+  }
+  .title{
+    height: 40%;
+  }
+  .text1{
+    margin-top: -200px;
+    width: 100%;
+    font-size: 100px;
+  }
+  .text2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    line-height: 70px;  
+    font-size: 54px;
+  }
+  .sendEmailImg{
+    width: 100%;
+    height: 100%;
+  }
+  .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+  }
+  .input input {
+    width: 500px;
+    height: 150px;
+    font-size: 80px;
+  }
+  .input button {
+    margin-top: 40px;
+    width: 220px;
+    height: 150px;
+    font-size: 40px;
+  }
+  
 }

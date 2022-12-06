@@ -50,46 +50,26 @@ const Basket = ({ data }) => {
             return (
               <Card
                 key={item._id}
-                style={{
-                  width: "300px",
-                  height: "400px",
-                  background: "#F5F5F5",
-                  border: "none",
-                }}
+                className={styles.cards}
+               
               >
                 <CardBody>
-                  <div style={{ height: "50%", width: "100%" }}>
+                  <div  className={styles.imgWrapper}>
                     <img src={item.img} className={styles.basketImg} />
                   </div>
 
-                  <CardText
-                    style={{
-                      height: "10%",
-                      marginTop: "10px",
-                      marginBottom: "0",
-                    }}
-                  >
-                    {" "}
+                  <CardText className={styles.cardTexts}>
                     <strong>{item.name}</strong>{" "}
                   </CardText>
-                  <CardText style={{ overflow: "hidden", height: "70px" }}>
+                  <CardText className={styles.cardTexts2}>
                     {item.description.substring(0, 100)}
                   </CardText>
-                  <CardText style={{ height: "10%", marginTop: "20px" }}>
+                  <CardText className={styles.cardTexts3}>
                     {item.price}
                   </CardText>
                 </CardBody>
-                <CardFooter
-                  style={{
-                    display: "flex",
-                    width: "100%",
-                    height: "15%",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <button className={styles.basketButtonsDelete}
-                    onClick={() => removeItem(item._id)}
-                  >
+                <CardFooter className={styles.cardFooters}>
+                  <button className={styles.basketButtonsDelete} onClick={() => removeItem(item._id)}>
                     {" "}
                     Delete{" "}
                   </button>

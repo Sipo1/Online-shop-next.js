@@ -172,7 +172,7 @@
  .Experience li {
         font-size: 14px;
         text-align: start;
-        width: 100px;
+        width: 150px;
     }
 
 
@@ -225,9 +225,7 @@
 
 
   @media only screen and (max-width:720px) {
-    .wrapper {
-        width: 1200px;
-    }
+    
     .aboutText{
         font-size: 28px;
         margin-left: 20px;
@@ -259,5 +257,93 @@
         display: flex;
         margin: 0px 20px 0px 20px;
     }
+  }
+
+  @media only screen and (max-width:400px) {
+
+    .topBlock{
+        display: flex;
+        flex-direction: column;
+        height: 2000px;
+    }
+    .topBlockLeftSide{
+        display: block;
+        width: 100%;
+    }
+    .aboutText{
+        font-size: 100px;
+        margin-top: 100px;
+    }
+    .list ul {
+        font-size: 80px;
+    }
+    .list li {
+        font-size: 60px;
+    }
+    .topBlockRightSide{
+        width: 100%;
+    }
+    .midBlock{
+        height: 2000px;
+        display: flex;
+        flex-direction: column;
+    }
+    .midBlockLeftSide{
+        width: 100%;
+        margin-top:-150px;
+    }
+    .firstImage{
+        width: 900px;
+        margin-right: 100px;
+    }
+    .secondImage{
+        width: 700px;
+        margin-top: 100px;
+    }
+    .midBlockRightSide{
+        width: 100%;
+    }
+    .about{
+        width: 400px;
+        font-size: 60px;
+        margin-top:-300px;
+    }
+    .midBlockHeader{
+        font-size: 70px;
+    }
+    .midBlocktext{
+        font-size: 40px;
+    }
+    .midBlockRightSide li{
+        font-size: 55px;
+    }
+    .bottomBlock{
+        display: flex;
+        flex-direction: column;
+        height: 2000px;
+    }
+    .bottomBlockLeftSide{
+        width: 100%;
+    }
+    .bottomButton{
+        font-size: 80px;
+        margin-left: 350px;
+        width: 400px;
+    }
+    .chooseText{
+        margin-left: 350px;
+        font-size: 70px;
+    }
+    .experienceText{
+        font-size: 50px;
+    }
+    .Experience li {
+        width: 100%;
+        font-size: 45px;
+    }
+    .bottomBlockRightSide{
+        width: 100%;
+    }
+    
   }
   

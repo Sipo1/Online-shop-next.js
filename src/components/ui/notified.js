@@ -1,22 +1,22 @@
-import Image from "next/image";
 import styles from "../../../styles/NotifiedPart.module.css";
+import  useTranslation  from 'next-translate/useTranslation';
+import { useRouter } from 'next/router';
 
 const NotifiedPart = () => {
+  const {t} = useTranslation()
+  const router = useRouter()
   return (
     <div className={styles.wrapper}>
       <div className={styles.title}>
-        <p className={styles.text1}>Never miss a thing</p>
-        <p className={styles.text2}>
-          Sign up for texts to be notified about our best offers on the perfect
-          gifts.
-        </p>
+        <p className={styles.text1}>{t("common:missThing")}</p>
+        <p className={styles.text2}>{t("common:signForNotified")}</p>
       </div>
       <div className={styles.img}>
-        <Image unoptimized='true' src="/sendmail.png" width={233} height={200} />
+        <img unoptimized='true' src="/sendmail.png"  className={styles.sendEmailImg}   />
       </div>
       <div className={styles.input}>
-        <input placeholder="Your email" />
-        <button>Sign up</button>
+        <input  placeholder={t("common:yourEmail")} />
+        <button className={router.locale == "en" ? styles.signUpBtn : styles.signUpBtn1}>{t("common:signUp")}</button>
       </div>
     </div>
   );

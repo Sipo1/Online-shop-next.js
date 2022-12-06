@@ -28,6 +28,22 @@
   background: none;
 }
 
+.wraperCarusel{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgb(220	229	226);
+}
+.imgWrapper img {
+  width: 100px;
+  height: 500px;
+}
+.imgWrapper{
+  width: 50%;
+  cursor: pointer;
+}
 @media only screen and (max-width:1140px) {
   .text1 {
     font-size: 45px;
@@ -60,4 +76,43 @@
   .text2 {
     font-size: 16px;
   }
+}
+
+@media only screen and (max-width:400px) {
+    .wraperCarusel{
+      height: 1400px;
+    }
+    .innerBlock{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 1400px;
+    }
+    .text1{
+      font-size: 80px;
+      line-height: 100px;
+      width: 900px;
+      margin-bottom: 50px;
+    }
+    .text2{
+      font-size: 54px;
+      line-height: 80px;
+      width: 900px;
+
+    }
+    .btn{
+      width: 400px;
+      height: 100px;
+      font-size: 60px;
+      margin-top: 50px;
+    }
+    .imgWrapper{
+      width: 1000px;
+      height: 800px;
+    }
+    .imgWrapper img{
+      width: 100%;
+      height: 100%;
+    }
+
 }

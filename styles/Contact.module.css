@@ -1,188 +1,276 @@
-.wrapper{
-    width: 100%;
-    height: auto
+.wrapper {
+  width: 100%;
+  height: auto;
 }
 .image {
-    margin-top: 50px;
-    width: 100%;
-    height: 90vh;
+  margin-top: 50px;
+  width: 100%;
+  height: 90vh;
 }
 .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.contact{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 40px;
+.contact {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 40px;
 }
-.contacts{
-    background-color: #EFF5FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: 180px;
-    box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
-    -webkit-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
-    -moz-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+.contacts {
+  background-color: #eff5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 180px;
+  box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -webkit-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -moz-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
 }
 .contacts div img {
-    width: 70%;
-    height: 70%;
-    margin: 10px;
-    padding-right: 10px;
+  width: 70%;
+  height: 70%;
+  margin: 10px;
+  padding-right: 10px;
 }
-.map{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 50px;
+.map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
-.formData{
-    width: 44%;
-    height: 70vh;
-    background-color: #EFF5FF;
-    margin-right: 60px;
-    box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
-    -webkit-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
-    -moz-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
-
+.formData {
+  width: 44%;
+  height: 70vh;
+  background-color: #eff5ff;
+  margin-right: 60px;
+  box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -webkit-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
+  -moz-box-shadow: 2px 0px 29px 0px rgba(181, 180, 180, 0.75);
 }
-.iframe{
-    width: 44%;
-    height: 70vh;
+.iframe {
+  width: 44%;
+  height: 70vh;
 }
-.formInput{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.formInput {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .formInput input {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #8D8E92;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #C7DCFB;
-    appearance: none;
-    border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #8d8e92;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c7dcfb;
+  appearance: none;
+  border-radius: 8px;
 }
-.nameInput{
-    width: 90%;
+.nameInput {
+  width: 90%;
 }
 
 .nameInput input {
-    text-align: start;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #8D8E92;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #C7DCFB;
-    border-radius: 8px;
-    width: 46%;
-    margin: 10px;
-    height: 40px;
-    border-radius: 15px;
-    padding: 10px;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #8d8e92;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c7dcfb;
+  border-radius: 8px;
+  width: 46%;
+  margin: 10px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 .subject {
-    width: 86%;
-    height: 60px;
-    border-radius: 15px;
-    margin-top: 20px;
-    padding: 10px;
+  width: 86%;
+  height: 60px;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 10px;
 }
-.message{
-    width: 86%;
-    height: 80px;
-    border-radius: 15px;
-    margin-top: 20px;
-    padding: 10px;
+.message {
+  width: 86%;
+  height: 80px;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 10px;
 }
-.send{
-    background-color: #8D8E92;
-    color: white;
-    font-weight: 500;
-    transition: .5s;
-    width:86% ;
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 15px;
-    border: 1px solid transparent;
-    font-size: 1rem;
-    border-radius: 8px
+.send {
+  background-color: #8d8e92;
+  color: white;
+  font-weight: 500;
+  transition: 0.5s;
+  width: 86%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  border-radius: 8px;
 }
-.send:hover{
-    background-color: blue;
+.send:hover {
+  background-color: blue;
 }
-.header{
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+}
+.headerText {
+  font-size: 40px;
+}
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #8d8e92;
+  border: 1px solid #c7dcfb;
+  border-radius: 15px;
+  width: 100px;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+@media only screen and (max-width: 1140px) {
+  .nameInput {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin-left: 50px;
-}
-.headerText{
-    font-size: 40px;
-}
-.button{
-    font-family: "Open Sans",sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #8D8E92;
-    border: 1px solid #C7DCFB ;
-    border-radius: 15px;
-    width: 100px;
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 0.25rem ;
-    padding-bottom: 0.25rem ;
-
-}
-@media only screen and (max-width:1140px) {
-        .nameInput{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-     
-        .headerText{
-            font-size: 26px;
-        }
+    flex-direction: column;
+    align-items: center;
   }
 
-  @media only screen and (max-width:980px) {
-    .headerText{
-        font-size: 25px;
-    }
-   
-    .formInput input{
-        height: 40px;
-    }
+  .headerText {
+    font-size: 26px;
+  }
 }
 
-@media only screen and (max-width:720px) {
-    .wrapper{
-        width: 1200px;
+@media only screen and (max-width: 980px) {
+  .headerText {
+    font-size: 25px;
+  }
+
+  .formInput input {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  /* .wrapper {
+    width: 1200px;
+  } */
+  .headerText {
+    font-size: 20px;
+  }
+
+  .formInput input {
+    height: 40px;
+  }
+  .contacts div p {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 400px) {
+    .image{
+        height: 1300px;
     }
-    .headerText{
-        font-size: 20px;
+    .image img {
+        object-fit: contain;
     }
-    
-    .formInput input{
-        height: 40px;
-    }
-    .contacts div p {
-        font-size: 11px;
-    }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+    gap: 50px;
+  }
+  .contacts {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .contactInfo p {
+    font-size: 50px !important;
+  }
+  .strong {
+    font-size: 70px;
+  }
+  .contactInfo {
+    width: 50%;
+  }
+  .iconBlock {
+    width: 200px;
+    height: 200px;
+  }
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+  .map{
+    display: flex;
+    flex-direction: column;
+  }
+  .formData{
+    width: 100%;
+    height: 1800px;
+  }
+  .button{
+    margin-left: 80px;
+    font-size: 80px;
+    width: 500px;
+    border: 3px solid #c7dcfb;
+    border-radius: 200px;
+  }
+  .header{
+    height: 500px;
+  }
+  .headerText{
+    margin-left: 80px;
+    font-size: 90px;
+  }
+  .nameInput{
+  }
+  .nameInput input{
+    width: 800px;
+    height: 150px;
+    font-size: 50px;
+  }
+  .subject{
+    width: 800px!important;
+    height: 150px!important;
+    font-size: 50px!important;
+  }
+  .message{
+    width: 800px!important;
+    height: 150px!important;
+    font-size: 50px!important;
+  }
+  .send{
+    width: 800px!important;
+    height: 150px!important;
+    font-size: 50px!important;
+  }
+  .formInput{
+    height: 1300px;
+  }
+  .iframe{
+    width: 100%;
+    height: 1500px;
+  }
+
 }

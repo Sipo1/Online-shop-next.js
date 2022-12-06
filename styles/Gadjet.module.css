@@ -188,3 +188,40 @@
   margin: 0;
   font-family: Inter
 }
+@media only screen and (max-width: 400px) {
+  .loader{
+    position: absolute;
+    left: 574px;
+    top: 535px;
+  }
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 300px;
+  }
+  .body{
+    height: auto;
+  }
+  .container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .face1{
+    width: 1000px;
+    height: 1000px;
+  }
+  .h5{
+    font-size: 80px;
+  }
+  .content img{
+    width: 1000px;
+    height: 1000px;
+  }
+  .content{
+    width: 100%;
+  }
+
+}

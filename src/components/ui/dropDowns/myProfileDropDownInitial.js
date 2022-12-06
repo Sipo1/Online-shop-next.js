@@ -8,25 +8,27 @@ import {
   DropdownItem,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
+import  useTranslation  from 'next-translate/useTranslation';
 
 function MyProfileDropDown({ direction, ...args }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const {t} = useTranslation()
 
   const toggle = () => setDropdownOpen((prevState) => !prevState);
 
   return (
     <div className="d-flex p-5">
       <Dropdown isOpen={dropdownOpen} toggle={toggle} direction={direction}>
-        <DropdownToggle className={styles.logOut} caret>My Profile </DropdownToggle>
+        <DropdownToggle className={styles.logOut} caret>{t("common:myProfile")} </DropdownToggle>
         <DropdownMenu className={styles.logOutBlock} {...args}>
           <Link href={"/registration"}>
 
-             <DropdownItem>Registration</DropdownItem>
+             <DropdownItem>{t("common:registr")}</DropdownItem>
 
           </Link>
 
           <Link href={"/login"}>
-           <DropdownItem>Login </DropdownItem> 
+           <DropdownItem>{t("common:login")} </DropdownItem> 
           </Link>
 
 

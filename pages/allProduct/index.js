@@ -9,10 +9,12 @@ import {
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
+import useTranslation  from 'next-translate/useTranslation';
 
 function AllProductDropDown({ direction, ...args }) {
     const navigate = useRouter()
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const {t} = useTranslation()
 
 
     const toggle = () => setDropdownOpen((prevState) => !prevState);
@@ -21,7 +23,7 @@ function AllProductDropDown({ direction, ...args }) {
     return (
         <div className="d-flex p-5"  >
             <Dropdown isOpen={dropdownOpen} toggle={toggle} direction={direction}>
-                <DropdownToggle className={styles.logOut} caret>All product  </DropdownToggle>
+                <DropdownToggle className={styles.logOut} caret>{t("common:products")} </DropdownToggle>
                 <DropdownMenu className={styles.logOutBlock} {...args}>
                     {productList.map((item) => {
                         return <Link href={`/allProduct/${item}`} key={item}   >
@@ -30,7 +32,7 @@ function AllProductDropDown({ direction, ...args }) {
                                     setTimeout(() => {
                                         window.location.reload()
                                     }, 500)
-                            }}>{item} </DropdownItem>
+                            }}>{t(`common:${item}`)} </DropdownItem>
                         </Link>
                     })}
 

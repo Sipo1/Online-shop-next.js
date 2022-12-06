@@ -3,6 +3,8 @@ import styles from "../styles/Home.module.css";
 import React, { forwardRef } from 'react';
 
 const Home = forwardRef(() => {
+  
+
   return (
     <div className={styles.global}>
       <HomePageUi />
@@ -10,5 +12,5 @@ const Home = forwardRef(() => {
   );
 })
 
-export default  Home
+export default Home
 

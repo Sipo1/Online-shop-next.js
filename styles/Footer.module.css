@@ -39,7 +39,18 @@
   padding-left: 70px;
   padding-right: 70px;
 }
-
+.country{
+  width: 170;
+  height: 20px;
+}
+.footImg1{
+  width: 12px;
+  height: 12px;
+}
+.footerText1{
+  font-size:14px ;
+  margin-top: 30px;
+}
 @media only screen and (max-width:1140px) {
  .title{
   font-size: 18px;
@@ -83,7 +94,65 @@
     margin-top: 20px;
     font-size: 13px;
    }
-   .footer{
-    width: 1200px;
+   
+}
+@media only screen and (max-width:400px) {
+  .footer{
+    height: 2000px;
+  }
+  .informSide{
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+  }
+  .informSide img{
+    width: 100%;
+    height: 25%;
+    margin-bottom: 120px;
+    margin-top: 30px;
+    margin-left: 280px;
    }
+   .footerText{
+    font-size: 50px;
+    margin-left: 280px;
+    width: 100%;
+   }
+   .title{
+    font-size: 50px;
+    margin-bottom: -100px!important;
+    height: 250px;
+   }
+   .li{
+    font-size: 40px;
+   }
+   .info{
+    display: flex;
+    flex-direction: column;
+   }
+   .infoLeftSide{
+    margin-bottom: 100px;
+   }
+   .infoRightSide{
+    margin-left: 200px;
+   }
+   .footImg1{
+    width: 50px;
+    height: 50px;
+   }
+   .footerEnd div span{
+    font-size: 40px;
+   }
+   .li1{
+    font-size: 30px;
+   }
+   .title1{
+    font-size: 45px;
+   }
+   .footerText1{
+    font-size:45px ;
+    margin-left: 280px;
+    width: 100%;
+
+  }
+
 }

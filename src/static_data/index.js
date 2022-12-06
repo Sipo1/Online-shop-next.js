@@ -24,44 +24,44 @@ export const navbarList = [
 export const footerData = [
   {
     id: 1,
-    title: "All products",
+    title: "footerProducts",
     childrens: [
       {
         id: 1,
-        name: "Phones",
+        name: "footerPhones",
         path: "/allProduct/Phones",
       },
       {
         id: 2,
-        name: "Watches",
+        name: "footerWatches",
         path: "/allProduct/Watches",
       },
       {
         id: 3,
-        name: "Ipads",
+        name: "footerIpads",
         path: "/allProduct/Ipads",
       },
       {
         id: 5,
-        name: "Laptops",
+        name: "",
         path: "/allProduct/Laptops",
       },
     ],
   },
   {
     id: 2,
-    title: "Pages",
+    title: "footerPages",
     childrens: [
       {
-        name:"Contact us ",
+        name:"footerContact",
         path: "/contactUs",
       },
       {
-        name:"About Us ",
+        name:"footerAbout",
         path: "/aboutUs",
       },
       {
-        name:"Services ",
+        name:"footerServices",
         path: "/services",
       }
         
@@ -70,52 +70,52 @@ export const footerData = [
   },
   {
     id: 3,
-    title: "Support",
+    title: "footerSupport",
     childrens: [
       {
         id: 1,
-        name: "Style Guide",
+        name: "footerStyleGuide",
         path: "/",
       },
       {
         id: 2,
-        name: "Licensing",
+        name: "footerLicensing",
         path: "/",
       },
       {
         id: 3,
-        name: "Change Log",
+        name: "footerChangeLog",
         path: "/",
       },
       {
         id: 4,
-        name: "Contact",
+        name: "footerContact",
         path: "/",
       },
     ],
   },
   {
     id: 4,
-    title: "Follow Us",
+    title: "footerFollow",
     childrens: [
       {
         id: 1,
-        name: "Instagram",
+        name: "footerInstagram",
         path: "/",
       },
       {
         id: 2,
-        name: "Facebook",
+        name: "footerFacebook",
         path: "/",
       },
       {
         id: 3,
-        name: "LinkedIn",
+        name: "footerLinkedIn",
         path: "/",
       },
       {
         id: 4,
-        name: "Youtube",
+        name: "footerYoutube",
         path: "/",
       },
     ],
@@ -125,22 +125,22 @@ export const footerData = [
 export const bestItemsData = [
   {
     id: Math.random(),
-    text1: "Smart light bulb pack",
-    text2: "Latest and gratest",
+    text1: "smart",
+    text2: "latest",
     img: "/clock.png",
     path:"/allProduct/Watches"
   },
   {
     id: Math.random(),
-    text1: "Smart light bulb pack",
-    text2: "Best selling",
+    text1: "smart",
+    text2: "selling",
     img: "/phone.png",
     path:"/allProduct/Phones"
   },
   {
     id: Math.random(),
-    text1: "Smart light bulb pack",
-    text2: "Every product",
+    text1: "smart",
+    text2: "product",
     img: "/laptop.png",
     path:"/allProduct/Laptops"
   },

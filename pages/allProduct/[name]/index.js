@@ -1,8 +1,8 @@
 import axios from "axios"
-import Link from "next/link"
 import { forwardRef, useEffect, useState } from "react"
 import CardComponent from "../../../src/components/cardComponent"
 import styles from "../../../styles/Gadjet.module.css"
+import useTranslation from 'next-translate/useTranslation';
 
 export async function getServerSideProps(context) {
   const { name } = context.params
@@ -12,6 +12,7 @@ export async function getServerSideProps(context) {
 }
 
 const Gadjet = forwardRef(({ name },ref) => {
+  const { t } = useTranslation()
   const [product, setProduct] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -27,7 +28,7 @@ const Gadjet = forwardRef(({ name },ref) => {
     <div className={styles.wrapper} ref={ref}>
       {loading ?
         < div className={styles.loader}>
-          <span>Loading...</span>
+          <span>{t("common:loading")}</span>
         </div>
         :
         product.map((item,index) => {

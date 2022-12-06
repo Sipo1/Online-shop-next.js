@@ -2,9 +2,11 @@ import styles from "../styles/Registration.module.css"
 import { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import useTranslation from 'next-translate/useTranslation';
 
 
 const Registration = () => {
+    const { t } = useTranslation()
     const navigate = useRouter()
     const [errorMessage, setErrorMessage] = useState("")
     const [registerForm, setRegisterForm] = useState({
@@ -81,7 +83,7 @@ const Registration = () => {
                     <p className={styles.errorMessage} > {errorMessage} </p>
 
                     <label htmlFor="nameId">
-                        Username
+                    {t("common:username")}
                     </label>
                     <input
                         required
@@ -89,7 +91,7 @@ const Registration = () => {
                         value={registerForm.username.value}
                         name="username"
                         onChange={handleChange}
-                        placeholder=" Username"
+                        placeholder={t("common:username")}
                         type="text"
                     />
                     {validateUsername(registerForm.username.value.length)}
@@ -97,13 +99,13 @@ const Registration = () => {
                 <div>
 
                     <label htmlFor="passwordId">
-                        Password
+                    {t("common:password")}
                     </label>
                     <input
                         id="passwordId"
                         name="password"
                         value={registerForm.password.value}
-                        placeholder=" Password"
+                        placeholder={t("common:password")}
                         type="password"
                         onChange={handleChange}
 
@@ -114,7 +116,7 @@ const Registration = () => {
                 <div >
 
                     <label htmlFor="confirmId">
-                        Confirm Password
+                    {t("common:confirmPassword")}
                     </label>
                     <input
                         required
@@ -122,15 +124,15 @@ const Registration = () => {
                         value={registerForm.confirmPassword.value}
                         name="confirmPassword"
                         onChange={handleChange}
-                        placeholder=" Confirm Password"
+                        placeholder={t("common:confirmPassword")}
                         type="password"
                     />
-                    {registerForm.confirmPassword.value != registerForm.password.value && <p style={{color:"red"}}>password and confirm password must be same</p>}
+                    {registerForm.confirmPassword.value != registerForm.password.value && <p style={{ color: "red" }}>password and confirm password must be same</p>}
                 </div>
                 <button
                     disabled={registerForm.confirmPassword.value != registerForm.password.value}
                     className={styles.formButton}
-                >Register</button>
+                >{t("common:register")}</button>
             </form >
         </div >
     )

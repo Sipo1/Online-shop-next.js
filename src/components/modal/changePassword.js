@@ -2,8 +2,10 @@ import axios from "axios";
 import { useState } from "react";
 import { Button, Input, Label, Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap"
 import styles from "../../../styles/Profile.module.css"
+import useTranslation from 'next-translate/useTranslation';
 
 const ChangePasswordModal = () => {
+    const { t } = useTranslation()
     const [modal, setModal] = useState(false);
     const [wrong, setWrong] = useState(false)
     const [succes, setSucces] = useState(false)
@@ -34,8 +36,8 @@ const ChangePasswordModal = () => {
         })
 
         try {
-           const res =  await axios.put("http://localhost:5000/api/auth/changePassword", formData)
-           console.log(res.data)
+            const res = await axios.put("http://localhost:5000/api/auth/changePassword", formData)
+            console.log(res.data)
             setSucces(true)
             setTimeout(() => {
                 setSucces(false)
@@ -55,26 +57,26 @@ const ChangePasswordModal = () => {
     const validatePassword = (str) => {
         var re = /^(?=.*\p{Ll})(?=.*\p{Lu})(?=.*[\d|@#$!%*?&])[\p{L}\d@#$!%*?&]{8,96}$/gmu
         if (!re.test(str) && !!str.length) {
-            return <p >Match uppercase, lowercase, digit or #$!%*?& and make sure the length is 8 to 96 in length</p>
+            return <p >{t("common:validatePassword")}</p>
         }
     }
     return (
         <div className={styles.modalWrapper}>
-            <p onClick={toggle} className={styles.changeText}> Change Password  </p>
-            <Modal isOpen={modal} toggle={toggle} >
-                <ModalHeader toggle={toggle} > Change Password </ModalHeader>
+            <p onClick={toggle} className={styles.changeText}>{t("common:changePassword")}</p>
+            <Modal isOpen={modal} toggle={toggle} className={styles.modal}>
+                <ModalHeader toggle={toggle} className={styles.ModalHeader}><p>{t("common:changePassword")}</p></ModalHeader>
                 <ModalBody className={styles.modalBody}>
                     <div >
-                        {succes && <p style={{ color: "green", }}>Success</p>}
-                        {wrong && <p style={{ color: "red" }} >Wrong</p>}
+                        {succes && <p style={{ color: "green", }}>{t("common:success")}</p>}
+                        {wrong && <p style={{ color: "red" }} >{t("common:wrong")}</p>}
                     </div>
-                    <Label> Old Password
+                    <Label>{t("common:oldPassword")}
                         <Input
                             value={changePassword.oldPassword}
                             onChange={e => setChangePassword({ ...changePassword, oldPassword: e.target.value })}
                         />
                     </Label>
-                    <Label> New Password
+                    <Label>{t("common:newPassword")}
                         <Input
                             value={changePassword.newPassword}
                             type='password'
@@ -82,7 +84,7 @@ const ChangePasswordModal = () => {
                         />
                         {validatePassword(changePassword.newPassword)}
                     </Label>
-                    <Label> Confirm new  Password
+                    <Label>{t("common:confirmNewPassword")}
                         <Input type='password'
                             value={changePassword.confirmPassword}
                             onChange={e => setChangePassword({ ...changePassword, confirmPassword: e.target.value })}
@@ -101,7 +103,7 @@ const ChangePasswordModal = () => {
                             changePassword.oldPassword == changePassword.newPassword && changePassword.oldPassword.length != 0
                         }
                     >
-                        Change
+                        {t("common:change")}
                     </Button>
 
                 </ModalFooter>
